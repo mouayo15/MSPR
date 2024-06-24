@@ -32,7 +32,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
+
       - name: Run Django migrations (if applicable)
         run: |
           python manage.py migrate --noinput
