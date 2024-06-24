@@ -32,12 +32,6 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      - name: Debug Python environment
-        run: |
-          echo "Python version: $(python --version)"
-          echo "Python location: $(which python)"
-          echo "PYTHONPATH: $PYTHONPATH"
-          pip show django
       
       - name: Run Django migrations (if applicable)
         run: |
